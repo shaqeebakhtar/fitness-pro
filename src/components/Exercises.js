@@ -27,9 +27,8 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
       setExercises(exercisesData);
     };
-
     fetchExerciseData();
-  }, [bodyPart]);
+  }, [bodyPart, setExercises]);
 
   return (
     <section className="container " id="exercises">
